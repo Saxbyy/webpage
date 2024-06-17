@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .about img {
+            height: 50%;
+            width: 420px;
+            border-radius: 2rem;
+            margin-right: 20px;
+            }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="webpage_style.css">
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                ABOUT ME
+            </h1>
+            <ul>
+                <li><a href="webpage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header> 
+
+    <section class="about">
+        <div class="main">
+            <img src="pictures/717090107974.jpg">
+            <div class="about-text">
+                <h1><i class="fa-sharp fa-solid fa-medal fa-lg" style="color: #00fff5;"></i><span> Experience</span></h1>
+                <h5>2+ years<span> Front-End Developer </span></h5>
+
+                <p>I have over 2 years of professional experience in Front-End Development, specializing in creating responsive and user-friendly web applications using HTML, CSS, JavaScript a strong focus on UI/UX design principles and optimizing for performance and cross-browser compatibility.</p>
+                
+            </div>
+            <div class="about-text">
+                <h1><i class="fa-sharp fa-solid fa-user-graduate fa-lg" style="color: #00fff5;"></i><span> Education</span></h1>
+                <h5>Bachelor of Science in <span> Computer Science</span></h5>
+
+                <p>I am a Computer Science graduate with a solid foundation in software development, data structures, algorithms, and database management, eager to apply my knowledge in creating innovative solutions and contributing effectively to projects in the tech industry.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="icons">
+                <a href="https://www.facebook.com/reymart.gocong/" target="_blank"><i class="fa-brands fa-facebook fa-2xl" ></i></a>
+
+                <a href="https://www.instagram.com/saxbylicious/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+
+                <a href="https://www.linkedin.com/in/reymart-g/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" ></i></a>
+
+                <a href="sinvictus20@gmail.com" target="_blank"><i class="fa-brands fa-google-plus fa-2xl"></i></a>
+
+                <a href="https://www.youtube.com/channel/UCN15ND839ChdIMioYIERHqA" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+            </div>
+        </div>  
+        <div class ="footerBottom">
+            <p>Copyright ©2022: Designed by<span class="designer"><strong>Reymart</strong></span></p>
+        </div>
+    </footer>
+
+</body>
+<script>
+    const btn= document.getElementById("btn")
+    btn.addEventListener("click" , () => {
+        document.querySelector("header ul").classList.toggle("show")
+    })
+</script>
+</html>

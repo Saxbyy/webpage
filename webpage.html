@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        img {
+            width: 350px;
+            border-radius: 50%;
+            }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reymart - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="webpage_style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                Reymart.dev
+            </h1>
+            <ul>
+                <li><a href="webpage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header> 
+    
+    <section>
+        <div class="s-container">
+            <div class="content">   
+                <p class="subtitle">
+                    Hello
+                </p>
+                <h1 class="title">
+                    I'm <span>Reymart <br></span> a UI/EX Designer
+                </h1>
+                <p class="description">
+                    Hello! I'm Reymart, a passionate UI/UX Designer dedicated to crafting intuitive and engaging user experiences. With a keen eye for detail and a love for innovative design, I specialize in transforming complex ideas into simple, beautiful, and user-friendly interfaces.
+                </p>
+                <div class="buttons">
+                    <a href="pictures/GOC-ONG,R.V.pdf" target="_blank">Download CV</a>
+                    <button>Hire me</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="pictures/IMG_20240530_223349.jpg" alt="MyProfile">
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footerContainer">
+            <div class="icons">
+                <a href="https://www.facebook.com/reymart.gocong/" target="_blank"><i class="fa-brands fa-facebook fa-2xl" ></i></a>
+                <a href="https://www.instagram.com/saxbylicious/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+                <a href="https://www.linkedin.com/in/reymart-g/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="sinvictus20@gmail.com" target="_blank"><i class="fa-brands fa-google-plus fa-2xl"></i></a>
+                <a href="https://www.youtube.com/channel/UCN15ND839ChdIMioYIERHqA" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+            </div>
+        </div>  
+        <div class ="footerBottom">
+            <p>Copyright ©2022: Designed by<span class="designer"><strong>Reymart</strong></span></p>
+        </div>
+    </footer>
+        
+</body>
+<script>
+    const btn= document.getElementById("btn")
+    btn.addEventListener("click" , () => {
+        document.querySelector("header ul").classList.toggle("show")
+    })
+</script>
+</html>   
